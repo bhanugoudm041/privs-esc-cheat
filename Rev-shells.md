@@ -1,6 +1,7 @@
 # Shells creation
 
 Install mingw on linux
+```sudo apt install mingw-w64```
 ```sudo apt install gcc-mingw-w64```
 
 Download the Cwindows(not c shell code) shell code filetype: **(CWindows)** from [revsehlls.com](https://www.revshells.com/) and save it to a file windows.c than run below command it will generate a reverse shell
