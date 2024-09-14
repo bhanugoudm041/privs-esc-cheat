@@ -185,7 +185,8 @@ Environment variables can often reveal interesting information:
 Installed Apps
 --------------
 
-List installed apps    
+List installed apps(below powershell script works very well) 
+***Note: If you have access to GUI enumrate apps from GUI add or Remove programs***
 
 .. code-block:: none
 
