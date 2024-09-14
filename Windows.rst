@@ -194,7 +194,7 @@ List installed apps
 	Get-AppPackage         -powershell
 
 
-Powershell all in one script(Works well shows all hidden apps from registries):    
+**Powershell all in one script(Works well shows all hidden apps from registries):**    
 
 .. code-block:: none
 
