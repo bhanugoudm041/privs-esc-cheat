@@ -182,6 +182,26 @@ Environment variables can often reveal interesting information:
     set
     echo %path%
 
+Installed Apps
+--------------
+
+List installed apps    
+
+.. code-block:: none
+
+wmic product get name,version     - cmd
+Get-AppxPackage        - powershell
+Get-AppPackage         -powershell
+
+Powershell all in one script(Works well shows all hidden apps from registries):    
+
+.. code-block:: none
+
+foreach ($UKey in 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*','HKLM:\SOFTWARE\Wow6432node\Microsoft\Windows\CurrentVersion\Uninstall\*','HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*','HKCU:\SOFTWARE\Wow6432node\Microsoft\Windows\CurrentVersion\Uninstall\*'){foreach ($Product in (Get-ItemProperty $UKey -ErrorAction SilentlyContinue)){if($Product.DisplayName -and $Product.SystemComponent -ne 1){$Product.DisplayName}}}
+
+
+
+
 Directory Listing
 -----------------
 
