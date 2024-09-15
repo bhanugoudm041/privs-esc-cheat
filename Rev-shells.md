@@ -5,7 +5,7 @@ Install mingw on linux
 ```sudo apt install gcc-mingw-w64```
 
 Download the Cwindows(not c shell code) shell code filetype: **(CWindows)** from [revsehlls.com](https://www.revshells.com/) and save it to a file windows.c than run below command it will generate a reverse shell
-##### c reverse shell code(Just replace IP & Port)
+#### C reverse shell code(Just replace IP & Port(Its a char data type so dont remove "" for IP & port))
 
 ```
 #include <winsock2.h>
