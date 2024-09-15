@@ -6,6 +6,9 @@ Install mingw on linux
 
 Download the Cwindows(not c shell code) shell code filetype: **(CWindows)** from [revsehlls.com](https://www.revshells.com/) and save it to a file windows.c than run below command it will generate a reverse shell
 
+### X86 compilation
 ```i686-w64-mingw32-gcc-win32 -std=c99 windows.c -o rsh.exe -lws2_32```
+### X64 compilation(it might show warning but its exe file works)
+```x86_64-w64-mingw32-gcc -std=c99 windows.c -o rsh.exe -lws2_32```
 
 #### -l this option is used to statically link binaries or else its going to produce an error here we are statically linking lws2_32 dll file
